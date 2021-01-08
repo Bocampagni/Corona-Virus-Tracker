@@ -16,15 +16,6 @@ export default function Menu(props) {
     return(
         
     <div className ={Styles.container} >
-
-            <Button
-                variant="contained"
-                size="large"
-                className={cx(Styles.card, classes.button)}
-                onClick = { () => functionUpdate('News') }
-            >
-                News
-            </Button>
             <Button
                 variant="contained"
                 size="large"
@@ -32,14 +23,6 @@ export default function Menu(props) {
                 onClick = { () => functionUpdate('Chart') }
             >
                 Chart
-            </Button>
-            <Button
-                variant="contained"
-                size="large"
-                className={cx(Styles.card, classes.button)}
-                onClick = { () => functionUpdate('Suggestions') }
-            >
-                Suggestions
             </Button>
     </div>
     );
