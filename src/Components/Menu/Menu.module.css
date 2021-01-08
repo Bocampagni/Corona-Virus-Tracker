@@ -1,0 +1,9 @@
+.container {
+    margin: 30px;
+}
+
+
+.card {
+    border-bottom: 3px solid rgb(0, 0, 250, .5) !important;
+}
+

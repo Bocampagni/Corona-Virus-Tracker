@@ -1,0 +1,6 @@
+O roadmap para ser criado recebe 3 argumentos no primeiro endpoint (GenerateRoadmap), depois disso, cai numa condicional onde é feito um select no banco para saber se existe composto com o id recibido, se existir composto, ele passa para a função GenerateRoadMapProduct, na qual é recebido também os 3 argumento que foram passados pela primeira requisição.
+
+Nessa função, é instanciada uma classe roadMap, e uma intersection. A intersection é populada por uma busca no banco pela data de começo e de final que foram recebidas no parametro inicial.
+
+Essa busca volta para o intersection um id, um fk_term, fk_type, fk_ipc, fk_organization, fk_patent, fk_product, fk_paper, as quais aparentemente são as foreign keys.
+

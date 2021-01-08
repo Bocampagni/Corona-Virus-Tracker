@@ -1,0 +1,16 @@
+body {
+    background-image: url("istockphoto-1205882245-1024x1025.jpg");
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 370px;
+    margin-top: 50px;
+}
