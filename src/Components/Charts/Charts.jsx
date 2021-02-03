@@ -16,43 +16,43 @@ const Charts = ({data: {confirmed, recovered, deaths}, country}) =>{
         fetchAPI();
     }, [])
 
-    const lineChart = (
-    dailyData.length 
-        ?(
-        <Line
-            data={{
-                labels: dailyData.map(({ date}) => date ),
-                datasets: [{
+    // const lineChart = (
+    // dailyData.length 
+    //     ?(
+    //     <Line
+    //         data={{
+    //             labels: dailyData.map(({ date}) => date ),
+    //             datasets: [{
                     
                     
-                    data: dailyData.map(({ confirmed }) => confirmed),
-                    label: "Infected",
-                    borderColor: "#3333ff",
-                    fill: true,
-                }, {
+    //                 data: dailyData.map(({ confirmed }) => confirmed),
+    //                 label: "Infected",
+    //                 borderColor: "#3333ff",
+    //                 fill: true,
+    //             }, {
                     
                     
-                    data: dailyData.map(({ deaths }) => deaths),
-                    label: "deaths",
-                    borderColor: "#red",
-                    backgroundColor: 'rgba(255,0,0, .5',
-                    fill: true,
+    //                 data: dailyData.map(({ deaths }) => deaths),
+    //                 label: "deaths",
+    //                 borderColor: "#red",
+    //                 backgroundColor: 'rgba(255,0,0, .5',
+    //                 fill: true,
 
                     
 
-                },
-                // {
-                //     data: dailyData.map(({recovered}) => recovered),
-                //     label: "Recovered",
-                //     borderColor: "#green",
-                //     backgroundColor: 'rgba(0,255,0, .5)',
-                //     fill: true,
-                // }
-            ],
-            }}
-        />) : null
+    //             },
+    //             // {
+    //             //     data: dailyData.map(({recovered}) => recovered),
+    //             //     label: "Recovered",
+    //             //     borderColor: "#green",
+    //             //     backgroundColor: 'rgba(0,255,0, .5)',
+    //             //     fill: true,
+    //             // }
+    //         ],
+    //         }}
+    //     />) : null
 
-    );
+    // );
 
     const barChart = (
         confirmed  
@@ -82,7 +82,8 @@ const Charts = ({data: {confirmed, recovered, deaths}, country}) =>{
 
     return(
         <div className={styles.container}>
-            {country ? barChart : lineChart}
+            {/* {country ? barChart : lineChart} */}
+            {barChart}
         </div>
     )
 }
